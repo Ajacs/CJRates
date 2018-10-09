@@ -120,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+FIXER_API_KEY = '95e3aac94fe302eaeb4212d70431f59d'
+BANXICO_TOKEN = '13c4d674a098e236bc437291ce89c55162c16c487b254fd0446718fb56b06634'
