@@ -12,7 +12,7 @@ from datetime import datetime
 @api_view(['GET'])
 def get_rates(request):
     last_updated = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    data = {
+    response = {
         'banxico': {
             'value': Banxico.perform(),
             'last_updated': last_updated
@@ -27,4 +27,4 @@ def get_rates(request):
         }
     }
 
-    return Response({'rates': data}, status=status.HTTP_200_OK)
+    return Response({'rates': response}, status=status.HTTP_200_OK)
